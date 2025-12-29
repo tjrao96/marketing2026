@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marketing2026 | Digital Marketing Trends</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-main: #121212;
+        --text-main: #F5F5F5;
+        --accent: #bef264;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .serif {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      /* Brand Typography Reset */
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.05em;
+        line-height: 0.9;
+        color: var(--text-main);
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #d9f99d, #4ade80, #2dd4bf);
+        -webkit-background-clip: text;
+        -webkit-fill-color: transparent;
+      }
+      .accent-bg {
+        background-color: var(--accent);
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0D0D0D;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent);
+      }
+
+      @media print {
+        @page {
+          margin: 2cm;
+        }
+        body {
+          background-color: white !important;
+          color: black !important;
+          font-size: 12pt;
+        }
+        .print-header {
+          display: flex !important;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 3px solid #000;
+          padding-bottom: 15px;
+          margin-bottom: 50px;
+          width: 100%;
+        }
+        nav, footer, aside, .no-print, [role="button"], button, .fixed {
+          display: none !important;
+          visibility: hidden !important;
+        }
+        #root {
+          display: block !important;
+        }
+        main {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          display: block !important;
+        }
+        article {
+          color: black !important;
+          width: 100% !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          color: black !important;
+          page-break-after: avoid;
+          page-break-inside: avoid;
+        }
+        p, blockquote, li {
+          color: #333 !important;
+          page-break-inside: avoid;
+        }
+        .prose-invert {
+          --tw-prose-body: #333 !important;
+          --tw-prose-headings: #000 !important;
+          --tw-prose-links: #000 !important;
+          --tw-prose-bold: #000 !important;
+          --tw-prose-bullets: #000 !important;
+          --tw-prose-quotes: #222 !important;
+          --tw-prose-quote-borders: #bef264 !important;
+        }
+        blockquote {
+          border-left: 5px solid #bef264 !important;
+          background: #f7f7f7 !important;
+          padding: 20px !important;
+          margin: 20px 0 !important;
+          font-size: 1.2em !important;
+        }
+        img {
+          max-width: 100% !important;
+          height: auto !important;
+          border-radius: 10px !important;
+        }
+        a {
+          text-decoration: none !important;
+          color: black !important;
+        }
+        a::after {
+          content: " (" attr(href) ")";
+          font-size: 0.8em;
+          color: #666;
+        }
+        a[href^="#"]::after, .print-header a::after {
+          content: "" !important;
+        }
+      }
+      .print-header {
+        display: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "marked": "https://esm.sh/marked@12.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div class="print-header">
+      <div style="font-weight: 800; font-size: 28px; letter-spacing: -1px; color: black;">
+        marketing<span style="color: #999;">2026</span>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: black; margin-bottom: 2px;">Strategic Insight Report</div>
+        <div style="font-size: 9px; color: #666; font-family: sans-serif;">Generated via tjrao.com.au | Thinking Forward</div>
+      </div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
